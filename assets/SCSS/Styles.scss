@@ -1,0 +1,58 @@
+
+$letras:Floralwhite;
+$fondo:#044967;
+;
+
+
+
+@import '../SCSS/Componentes/header';
+@import '../SCSS/Componentes/main';
+@import '../SCSS/Componentes/footer';
+
+
+
+
+body{
+    width:100%;
+    border:0px;}
+
+.container-fluid{
+    --bs-gutter-x: 0rem; 
+    }
+    |*{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        @font-face {
+            font-family:"Poppins";
+            src: url(../Fonts/Poppins-Regular.ttf);
+            font-weight:400;
+          }
+          
+          @font-face {
+            font-family:"Poppins";
+            src: url(../Fonts/Poppins-Bold.ttf);
+            font-weight:700;
+          }
+          
+          @font-face {
+            font-family:"Poppins";
+            src: url(../Fonts/Poppins-ExtraBold.ttf);
+            font-weight:800;
+          }
+        
+          @media (max-width:576px){
+            .general{
+                height: auto;
+                font-size: 12px;
+        
+                
+            }    
+            main .general .row {
+              align-items: center;
+              --bs-gutter-x: 0rem;
+              padding-top: 0px;
+        }}
+
+
+

@@ -1,0 +1,300 @@
+header {
+  background-color: #044967;
+  color: Floralwhite;
+  border: 1px solid Floralwhite;
+  font-family: "Poppins";
+  font-weight: 400px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+header .navbar-toggler {
+  background-color: Floralwhite;
+}
+header img {
+  width: 100px;
+  height: 100px;
+}
+header .nav-link {
+  color: Floralwhite;
+  font-size: 20PX;
+}
+header .container-fluid {
+  --bs-gutter-x: 0rem;
+}
+header .nav-link {
+  color: Floralwhite;
+}
+header .nav-link:hover {
+  color: darkgoldenrod;
+}
+header .btn {
+  background-color: Floralwhite;
+  color: #044967;
+}
+header .btn:hover {
+  background-color: darkgoldenrod;
+}
+
+.fw-light {
+  font-family: "poppins";
+  font-weight: 400;
+  color: #044967;
+  font-family: "poppins";
+}
+
+.text-body-secondary {
+  color: #044967 !important;
+  font-family: "poppins";
+}
+
+.bg-body-tertiary {
+  background-color: #044967 !important;
+}
+
+main {
+  color: Floralwhite;
+  background-image: linear-gradient(rgba(9, 0, 10, 0.9), hwb(198 0% 22%/0.9)), url(../img/LOGOS/Imagotipo\ full\ color\ sin\ fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #044967;
+}
+
+.retrieve {
+  height: 24em;
+}
+
+.col-sm-6 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-sm-4 {
+  font-size: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-4 .azul {
+  margin-top: 15px;
+}
+
+.col-sm-12 {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
+.contacto {
+  height: 33em;
+}
+
+.login {
+  height: 7em;
+}
+
+.registro {
+  height: 32em;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  transition: all 2s;
+  padding-right: 20px;
+}
+p:hover {
+  cursor: none;
+  background-color: #044967;
+  font-size: 16px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.quien img {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+}
+.quien h1 {
+  text-align: center;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
+.atletas {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.py-5 {
+  padding-bottom: 0px !important;
+}
+
+.general {
+  height: 53em;
+}
+.general .row {
+  align-items: center;
+  --bs-gutter-x: 0rem;
+  padding-top: 100px;
+}
+
+.row {
+  align-items: center;
+  --bs-gutter-x: 0rem;
+}
+
+.mb-3 {
+  margin-left: 50px;
+  margin-right: 20%;
+  margin-bottom: 0px !important;
+}
+.mb-3 .azul {
+  margin-top: 15px;
+}
+
+p {
+  margin-left: 50px;
+}
+
+.input {
+  height: 30px;
+  transition: height 2s;
+}
+.input:focus {
+  height: 40px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.contacto img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-primary {
+  margin-left: 50px;
+}
+
+.button {
+  color: Floralwhite;
+}
+
+.form {
+  padding: 10px;
+  height: 26em;
+}
+.form input {
+  margin-right: 2em;
+}
+
+#emailHelp {
+  color: Floralwhite;
+}
+
+iframe {
+  height: 300px;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 10px;
+  border: 5px solid Floralwhite;
+  justify-content: center;
+}
+
+.row a {
+  color: Floralwhite;
+  text-align: center;
+}
+.row .if {
+  height: 37em;
+}
+
+.col-sm-7 iframe {
+  height: 300px;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 10px;
+  border: 5px solid Floralwhite;
+  justify-content: center;
+}
+
+footer {
+  background-color: #044967;
+  color: Floralwhite;
+  padding: 0.5em;
+  border: 1px solid Floralwhite;
+}
+footer h6 {
+  font-size: 10px;
+  padding: 1em;
+}
+footer .row {
+  --bs-gutter-x:0rem;
+  align-items: center;
+  height: 110px;
+}
+footer .row ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .row ul li {
+  list-style-type: none;
+}
+footer .row ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  width: 100%;
+  border: 0px;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
+|* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+}
+@media (max-width: 576px) {
+  .general {
+    height: auto;
+    font-size: 12px;
+  }
+  main .general .row {
+    align-items: center;
+    --bs-gutter-x: 0rem;
+    padding-top: 0px;
+  }
+}/*# sourceMappingURL=Styles.css.map */

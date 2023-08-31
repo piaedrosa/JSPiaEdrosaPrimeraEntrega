@@ -1,0 +1,39 @@
+header{
+    
+    background-color:$fondo;
+    color:$letras;
+    border: 1px solid $letras;
+    font-family: "Poppins";
+    font-weight:400px;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    text-align: center;
+
+   .navbar-toggler{
+        background-color: $letras;
+    }
+   
+    img{
+    width: 100px;
+    height: 100px;
+    }
+    .nav-link{
+    color:$letras; 
+    font-size: 20PX;  
+    }
+    .container-fluid{
+    --bs-gutter-x: 0rem;
+    }
+    .nav-link{
+    color:$letras;
+    &:hover{
+    color:darkgoldenrod;     
+    }}
+   .btn{
+    background-color: $letras;
+    color:$fondo;
+    &:hover{
+    background-color:darkgoldenrod;
+    }}}
+

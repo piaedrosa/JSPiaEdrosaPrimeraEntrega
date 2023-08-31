@@ -1,0 +1,217 @@
+.fw-light {
+   font-family: 'poppins';
+   font-weight: 400;
+   color: #044967;
+   font-family: 'poppins';
+   
+}
+.text-body-secondary {
+    color: #044967 !important;
+    font-family: 'poppins';
+    
+}
+.bg-body-tertiary {
+    background-color: #044967 !important;
+}
+
+main{
+    color:$letras; 
+    background-image: linear-gradient( rgba(9, 0, 10, 0.9),hwb(198 0% 22% / 0.9)), url(../img/LOGOS/Imagotipo\ full\ color\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #044967;
+} 
+
+
+.retrieve{
+    height:24em;
+}
+.col-sm-6{
+        display: flex;
+        justify-content: space-around;
+    }
+.col-sm-4{
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    .azul{
+        margin-top: 15px;
+    }
+    
+}
+.col-sm-12{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+ .container-fluid{
+        --bs-gutter-x: 0rem;
+        
+        }
+.contacto{
+    height:33em;
+
+}
+.login{
+    height:7em;
+}
+.registro{
+    height: 32em;
+}
+h1{
+    text-align: center;
+}
+ p{transition: all 2s;
+    padding-right: 20px;
+    &:hover{
+        cursor:none;
+        background-color: $fondo;
+        font-size: 16px;
+        text-decoration: solid;
+    }
+ }
+
+    .quien{
+        img{
+            height: 400px;
+            width: 300px;
+            padding: 20px
+        }
+        h1{
+            text-align: center;
+
+        }
+    }
+    .container-fluid{
+        --bs-gutter-x: 0rem;
+      
+      
+       
+    }
+
+
+.atletas{
+    height:fit-content
+
+}
+.py-5 {
+    padding-bottom: 0px !important;
+}
+
+    .general{
+        height: 53em;
+    
+    .row{
+        align-items: center;
+        --bs-gutter-x: 0rem;
+        padding-top: 100px;
+        
+        
+            
+            }
+
+        }
+    
+ .row{
+        align-items: center;
+        --bs-gutter-x: 0rem;
+    
+    }
+ 
+.mb-3{
+    margin-left: 50px;
+    margin-right: 20%;
+    margin-bottom: 0px !important;
+    .azul{
+        margin-top: 15px;
+    }
+   
+}
+p{
+    margin-left: 50px;
+}
+
+
+    .input{
+        height: 30px;
+    transition: height 2s;
+    &:focus{
+        height: 40px;
+    }}
+
+  
+    
+    
+    .h1{
+        text-align: center;
+    }
+    .contacto{
+        img{
+            width: 50px;
+            height: 50px;
+
+        }
+    }
+    .btn-primary{
+        margin-left: 50px;
+        ;
+
+     }
+     .button{
+        color:$letras;
+    }
+    
+    .form{
+        padding: 10px;
+        height: 26em;
+        input{
+            margin-right: 2em;
+        }
+        }
+        #emailHelp{
+            color: $letras;
+        }
+               
+        
+        iframe{
+            height: 300px;
+            width: 80%;
+            margin-left: 50px;
+            margin-top: 10px;
+            border: 5px solid $letras;
+            justify-content: center;
+           
+        }
+   
+     .row{
+        a{
+                color: $letras;
+                text-align: center;
+        }
+        .if{
+            
+            height:37em;
+
+        }
+    }    
+   
+    .col-sm-7{
+        iframe{
+            height: 300px;
+            width: 80%;
+            margin-left: 50px;
+            margin-top: 10px;
+            border: 5px solid $letras;
+            justify-content: center;
+        }
+   
+        }
+    
+    
+     
+
+
+
+
+
