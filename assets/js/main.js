@@ -28,8 +28,8 @@ function validarEdad() {
   
   // Función para elegir el método de pago
 function elegirMetodoDePago(plan) {
-    var metodoPago = prompt("Elige un método de pago: efectivo, crédito, débito").toLowerCase();
-    var costoMensual = calcularCostoMensual(plan);
+    let metodoPago = prompt("Elige un método de pago: efectivo, crédito, débito").toLowerCase();
+    let costoMensual = calcularCostoMensual(plan);
   
     switch (metodoPago) {
       case "efectivo":
