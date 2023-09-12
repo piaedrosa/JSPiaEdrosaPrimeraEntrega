@@ -53,7 +53,9 @@
     <!--Empieza el Main-->  
     <Main class="registro">
     <h1>Registro</h1>
-    <legend>¿Qué esperas para ser parte de la comunidad ALL OUT?</legend>
+    <legend>¿Qué esperas para ser parte de la comunidad ALL OUT? A continuación completa con los datos requeridos. 
+      
+    </legend>
   
       <form class="registro">
         <div class="row">
@@ -62,20 +64,24 @@
           <input type="text" name="Nombre" class="form-control input" id="Nombre"> </div>
           <div class="col-sm-4"> <label for="Apellido"> Apellido </label>
           <input type="text" name="Apellido" class="form-control input"  id="Apellido">  </div>
-          <div class="col-sm-4"> <label for="DNI">D.N.I.  </label> 
-            <input type="number" name="DNI" class="form-control input" > </div>
+          <div class="col-sm-4"> <label for="Edad">Edad  </label> 
+            <input type="number" name="Edad" class="form-control input" > </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4"> <label for="Genero"> Genero></label>
-          <input type="radio" name="Genero"  id="Femenino" value="Femenino"> Fermenino
-          <input type="radio" name="Genero" id="Masculino" value="Masculino"> Masculino
-          
-          </div>
-          <div class="col-sm-4"> <label for="Idioma">Idioma</label>
-          <input type="checkbox" name="Idioma" id="Idioma" value="Ingles"> Ingles
-          <input type="checkbox" name="Idioma" id="Idioma" value="Ingles"> Español
-          <input type="checkbox" name="Idioma" id="Idioma" value="Ingles"> Frances 
-          </div>
+        <div class="col-sm-4"> <label for="Planificacion"> Planificación</label>
+          <select name="Planificacion" id="Planificacion">
+              <option value="Blank"></option>
+              <option value="Scaled">Scaled</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Elite">Elite</option>
+         </select> 
+            </div><div class="col-sm-4"> <label for="Metodo de Pago"> Metodo de Pago</label>
+              <select name="Metodo de Pago" id="Metodo de pago">
+                  <option value="Blank"></option>
+                  <option value="Efectivo/Transferencia">Efectivo/Transferencia</option>
+                  <option value="Debito">Debito</option>
+                  <option value="Credito">Crédito</option>
+             </select> 
+                </div>
           <div class="row">
             <div class="col-sm-4"> <label for="email" name="email"  id="email">E-Mail</label> 
           <input type="email" name="email" class="form-control input"></div>
@@ -85,13 +91,7 @@
           <input type="password" name="contraseña" class="form-control input"> </div>
           </div>
           <div class="row">
-            <div class="col-sm-4> <label for="Planificacion"> Planificación</label>
-          <select name="Planificacion" id="Planificacion">
-              <option value="Scaled">Scaled</option>
-              <option value="Intermediate">Intermediate</option>
-              <option value="Elite">Elite</option>
-         </select> 
-            </div>
+           
             <div class="row">
             <div class="col-sm-4">
          <a href="../Pages/Login.html" type="Registrarme" class="btn btn-primary azul">Registrarme</button></a>
