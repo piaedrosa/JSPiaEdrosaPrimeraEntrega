@@ -15,7 +15,7 @@ function validarEdad() {
     elegirPlan();
   }
   
-  // Función para elegir un plan
+  // cuando valida que es mayor, pasa a la función para elegir un plan (en funcion a la edad)
   function elegirPlan() {
     let plan = prompt("Elige un plan: scaled, intermedio, elite").toLowerCase();
   
@@ -26,7 +26,7 @@ function validarEdad() {
     }
   }
   
-  // Función para elegir el método de pago
+  // El costo mensual varia segun el metodo de pago. creo otra función para elegir el método de pago, que depende del plan
 function elegirMetodoDePago(plan) {
     let metodoPago = prompt("Elige un método de pago: efectivo, crédito, débito").toLowerCase();
     let costoMensual = calcularCostoMensual(plan);
@@ -34,21 +34,21 @@ function elegirMetodoDePago(plan) {
     switch (metodoPago) {
       case "efectivo":
         costoMensual *= 0.9; // Aplicar un descuento del 10% al pagar en efectivo
-        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual.toFixed(2) + " (Pago en efectivo).");
+        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual + " (Pago en efectivo).");
         break;
       case "crédito":
         costoMensual *= 1.1; // Aplicar un recargo del 10% al pagar con crédito
-        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual.toFixed(2) + " (Pago con tarjeta de crédito).");
+        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual + " (Pago con tarjeta de crédito).");
         break;
       case "débito":
         costoMensual *= 1.05; // Aplicar un recargo del 5% al pagar con débito
-        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual.toFixed(2) + " (Pago con tarjeta de débito).");
+        console.log("El costo mensual del plan " + plan + " es: $" + costoMensual + " (Pago con tarjeta de débito).");
         break;
       default:
         console.log("Método de pago no válido. Por favor, elige uno de los métodos de pago disponibles.");
     }
   }
-  // Función para calcular el costo mensual según el plan
+  // Usamos un Switch dentro de la función para calcular el costo mensual según el plan
   function calcularCostoMensual(plan) {
     switch (plan) {
       case "scaled":
@@ -62,5 +62,5 @@ function elegirMetodoDePago(plan) {
     }
   }
   
-  // Llamamos a la función principal para iniciar el proceso
+  // iniciamos el proceso instanciando a la función principal 
   validarEdad();
