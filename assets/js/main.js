@@ -1,6 +1,5 @@
-
 let atletas = atletasMock.map((a) => {
-  return new Atleta(
+  return new atleta(
       a.nombre,
       a.apellido,
       a.edad,
@@ -70,7 +69,7 @@ const registrarAtleta = (
       contrasenia);
 
   if (errores.length !== 0) {
-      console.table(erores);
+      console.table(errores);
       return false;
 
   }
@@ -78,7 +77,7 @@ const registrarAtleta = (
       console.table(["El Atleta con el email " + email + " ya esta registrado"]);
       return false;
   }
-  let unAtleta = new Atleta(
+  let unAtleta = new atleta(
       nombre,
       apellido,
       edad,
