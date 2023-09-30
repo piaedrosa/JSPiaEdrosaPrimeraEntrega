@@ -8,7 +8,7 @@ const validarEdad=()=> {
     }
   
     if (edad < 16) {
-      console.log("Eres menor de 16 años y no puedes suscribirte a nuestros planes.");
+      alert("Eres menor de 16 años y no puedes suscribirte a nuestros planes.");
       return;
     }
   
