@@ -1,5 +1,5 @@
 let atletas = atletasMock.map((a) => {
-    return new atleta(
+    return new Atleta(
         a.nombre,
         a.apellido,
         a.edad,
@@ -18,40 +18,39 @@ const validarFormulario = (
     contrasenia = ""
 ) => {
     let mensajes = [];
-    if (nombre == 0) {
+    if (nombre.length == 0) {
         mensajes.push("Complete el campo nombre para continuar")
 
     }
-    if (apellido == 0) {
+    if (apellido.length == 0) {
         mensajes.push("Complete el campo apellido para continuar")
 
     }
-    if (edad == 0) {
+    if (edad.length == 0) {
         mensajes.push("Complete el campo edad para continuar");
 
     }
-    if (email == 0) {
+    if (email.length == 0) {
         mensajes.push("Complete el campo E-mail para continuar");
 
-    }
-    if (usuario == 0) {
-        mensajes.push("Complete el campo usuario para continuar");
-
     } else if (!email.includes("@")) {
-        mensajes.push("el campo email no tiene un formato válido")
-
-    } else {
+        mensajes.push("el campo email no tiene un formato válido");
 
     }
-    if (contrasenia == 0) {
+    if (usuario.length == 0) {
+        mensajes.push("Complete el campo usuario para continuar");
+    }
+
+    if (contrasenia.length == 0) {
         mensajes.push("Complete el campo contraseña para continuar");
 
     }
     return mensajes;
 };
 const isExisteAtleta = (atletas = [], identificador = "") => {
-    return atletas.some((unAtleta) => unAtleta.email === identificador);
-}
+    return atletas.some(
+        (unAtleta) => unAtleta.email === identificador);
+};
 
 const registrarAtleta = (
     nombre,
@@ -61,7 +60,14 @@ const registrarAtleta = (
     usuario,
     contrasenia
 ) => {
-    const errores = validarFormulario(nombre, apellido, edad, email, usuario, contrasenia);
+    const errores = validarFormulario(
+        nombre,
+        apellido,
+        edad,
+        email,
+        usuario,
+        contrasenia);
+
     if (errores.length !== 0) {
         console.table(erores);
         return false;
@@ -71,7 +77,7 @@ const registrarAtleta = (
         console.table(["El Atleta con el email " + email + " ya esta registrado"]);
         return false;
     }
-    let unAtleta = new atleta(
+    let unAtleta = new Atleta(
         nombre,
         apellido,
         edad,
@@ -81,7 +87,6 @@ const registrarAtleta = (
 
     );
     atletas.push(unAtleta);
-    console.table(atletas)
     return true;
 };
 
