@@ -86,7 +86,7 @@ const registrarAtleta = (
         contrasenia
 
     );
-    atletas.push(unAtleta);
+    atletasMock.push(unAtleta);
     return true;
 };
 
