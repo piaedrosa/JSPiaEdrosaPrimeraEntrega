@@ -1,11 +1,11 @@
 
 
 
-let usuariosRegistrados = [
+let atletasMock = [
     {
         nombre: "Delfina",
         apellido: "Cohen",
-        edad: 22,
+        edad: "22",
         email: "delfinacohen@gmail.com",
         usuario: "delfico",
         contrasenia: "delfi1992",
@@ -15,7 +15,7 @@ let usuariosRegistrados = [
 
         nombre: "Cristian",
         apellido: "Ceballos",
-        edad: 29,
+        edad: "29",
         email: "crisceballos@gmail.com",
         usuario: "crisceba",
         contrasenia: "ElremomiPasion23",
@@ -25,7 +25,7 @@ let usuariosRegistrados = [
 
         nombre: "Maria Jose",
         apellido: "Bustamante",
-        edad: 27,
+        edad: "27",
         email: "majitobusta@gmail.com",
         usuario: "Majobu",
         contrasenia: "Majo1996",
@@ -35,7 +35,7 @@ let usuariosRegistrados = [
 
         nombre: "Diego",
         apellido: "Benitez",
-        edad: 26,
+        edad: "26",
         email: "diebenitez@gmail.com",
         usuario: "Ben10",
         contrasenia: "diebeniteZ",
@@ -45,7 +45,7 @@ let usuariosRegistrados = [
 
         nombre: "Daniel",
         apellido: "Rios",
-        edad: 19,
+        edad: "19",
         email: "danirios@gmail.com",
         usuario: "DanielSan",
         contrasenia: "Pateandotachos",
@@ -55,7 +55,7 @@ let usuariosRegistrados = [
 
         nombre: "Pia",
         apellido: "Edrosa",
-        edad: 42,
+        edad: "42",
         email: "piaedrosa@gmail.com",
         usuario: "piaedrosa",
         contrasenia: "Planta23",
@@ -75,7 +75,7 @@ let usuariosRegistrados = [
 
         nombre: "Ismael",
         apellido: "Pinacca",
-        edad: 32,
+        edad: "32",
         email: "ismapina@gmail.com",
         usuario: "photopic",
         contrasenia: "sacofotoslindas",
@@ -85,7 +85,7 @@ let usuariosRegistrados = [
 
         nombre: "Bautista",
         apellido: "Farias",
-        edad: 24,
+        edad: "24",
         email: "Bautifarias@gmail.com",
         usuario: "Bautitute",
         contrasenia: "Bautifa1998",
@@ -95,11 +95,11 @@ let usuariosRegistrados = [
 
         nombre: "sofia",
         apellido: "sivori",
-        edad: 16,
+        edad: "16",
         email: "sofisivori20@gmail.com",
         usuario: "sofisivori20",
         contrasenia: "lunayflash",
 
     },
 
-]
+];

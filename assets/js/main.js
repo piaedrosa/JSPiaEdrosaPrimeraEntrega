@@ -1,3 +1,12 @@
+let unAtleta ={
+  nombre: "sofia",
+  apellido: "sivori",
+  edad: "16",
+  email: "sofisivori20@gmail.com",
+  usuario: "sofisivori20",
+  contrasenia: "lunayflash"
+};
+
 // Lo primero que hacemos es una función para validar la edad del usuario
 const validarEdad=()=> {
     let edad = parseInt(prompt("Por favor, ingresa tu edad:"));

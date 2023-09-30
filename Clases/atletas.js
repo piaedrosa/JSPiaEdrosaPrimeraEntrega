@@ -1,4 +1,4 @@
-class atletas {
+class atleta {
     constructor(
     nombre,
     apellido,
