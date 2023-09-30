@@ -88,6 +88,7 @@ const registrarAtleta = (
   );
   atletasMock.push(unAtleta);
   return true;
+ 
 };
 
 let respuesta = prompt("quieres registrar otro atleta?");
@@ -97,7 +98,7 @@ while (respuesta.trim().toUpperCase() === "SI") {
   let edad = prompt("Ingrese edad");
   let email = prompt("Ingrese email");
   let usuario = prompt("Ingrese usuario");
-  let contrasenia = prompt("Ingrese contrasenia");
+  let contrasenia = prompt("Ingrese contraseña");
 
   if (registrarAtleta(
       nombre,
