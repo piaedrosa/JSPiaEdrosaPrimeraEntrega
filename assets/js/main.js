@@ -92,7 +92,7 @@ const registrarAtleta = (
 };
 
 let respuesta = prompt("quieres registrar otro atleta?");
-while (respuesta.trim().toUpperCase() === "SI") {
+while (respuesta.toUpperCase().trim() === "SI") {
   let nombre = prompt("ingrese nombre");
   let apellido = prompt("Ingrese apellido");
   let edad = prompt("Ingrese edad");

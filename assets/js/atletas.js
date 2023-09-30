@@ -1,5 +1,5 @@
 let atletas = atletasMock.map((a) => {
-    return new Atleta(
+    return new Atleta (
         a.nombre,
         a.apellido,
         a.edad,
