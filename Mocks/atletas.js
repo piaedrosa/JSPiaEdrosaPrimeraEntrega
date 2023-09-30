@@ -62,7 +62,7 @@ let atletasMock = [
 
         nombre: "Ariel",
         apellido: "Millahuel",
-        edad: 30,
+        edad: "30",
         email: "arimilla@gmail.com",
         usuario: "arimilla",
         contrasenia: "arimilla32",

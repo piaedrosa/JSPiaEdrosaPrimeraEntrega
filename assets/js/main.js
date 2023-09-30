@@ -1,5 +1,5 @@
 let atletas = atletasMock.map((a) => {
-  return new atleta(
+  return new Atleta(
       a.nombre,
       a.apellido,
       a.edad,
@@ -77,7 +77,7 @@ const registrarAtleta = (
       console.table(["El Atleta con el email " + email + " ya esta registrado"]);
       return false;
   }
-  let unAtleta = new atleta(
+  let unAtleta = new Atleta(
       nombre,
       apellido,
       edad,
