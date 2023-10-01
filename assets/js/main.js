@@ -1,3 +1,5 @@
+//carga de pacientes con prompt//
+
 let atletas = atletasMock.map((a) => {
   return new Atleta(
       a.nombre,
@@ -8,7 +10,7 @@ let atletas = atletasMock.map((a) => {
       a.constrasenia,
   );
 });
-
+//validaciones del formulario//
 const validarFormulario = (
   nombre = "",
   apellido = "",
@@ -73,26 +75,31 @@ const registrarAtleta = (
       return false;
 
   }
-  if (isExisteAtleta(atletas, email)) {
-      console.table(["El Atleta con el email " + email + " ya esta registrado"]);
-      return false;
-  }
-  let unAtleta = new Atleta(
+  // Verificar si el atleta ya existe en la base de datos por email
+  if (!isExisteAtleta(atletas, email)) {
+    let unAtleta = new Atleta(
       nombre,
       apellido,
       edad,
       email,
       usuario,
       contrasenia
+    );
+    
+    // Agregar el nuevo atleta a atletasMock
+    atletasMock.push(unAtleta);
+    
+    console.table(atletasMock); // Para mostrar los atletas actualizados
+  } else {
+    console.table(["El Atleta con el email " + email + " ya está registrado"]);
+  }
 
-  );
-  atletasMock.push(unAtleta);
   return true;
- 
 };
 
+
 let respuesta = prompt("quieres registrar otro atleta?");
-while (respuesta.toUpperCase().trim() === "SI") {
+while (respuesta.toUpperCase() === "SI") {
   let nombre = prompt("ingrese nombre");
   let apellido = prompt("Ingrese apellido");
   let edad = prompt("Ingrese edad");
@@ -107,7 +114,7 @@ while (respuesta.toUpperCase().trim() === "SI") {
       email,
       usuario,
       contrasenia)) {
-      console.table(atletas)
+      
   }
   else {
       alert("verificar los datos ingresados")
