@@ -191,3 +191,33 @@ const elegirMetodoDePago=(plan)=> {
   // iniciamos el proceso instanciando a la función principal 
   validarEdad();
 
+const bottonColorMode = document.querySelector("#color-mode");
+const body = document.body;
+
+let darkMode = localStorage.getItem("dark-mode");
+ function activarDarkMode(){
+  body.classList.add("dark-mode");
+  localStorage.setItem("dark-mode", "activado");
+ }
+
+ function desactivarDarkMode (){
+  body.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode", "desactivado")
+ }
+
+ if (darkMode=== "activado") {
+  activarDarkMode();
+ } else {
+    desactivarDarkMode();
+  }
+  
+  bottonColorMode.addEventListener("click", ()=> {
+    darkMode= localStorage.getItem("darkmode");
+    if (darkMode==="activado"){
+      desactivarDarkMode();
+    } else{activarDarkMode();
+
+    }
+  })
+
+ 
