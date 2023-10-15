@@ -50,10 +50,10 @@
 
         <a href="../Pages/Login.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
         <a href="../Pages/Registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
-          <button id="color-mode" class="btn">Modo Oscuro</button>
-      
+        <button id="color-mode" class="btn btn-primary">Modo Oscuro</button>
 
-      
+
+
       </div>
     </div>
   </nav>
@@ -64,8 +64,8 @@
 <!--Empieza el Main-->
 <Main class="registro">
   <h1>Registro</h1>
-  <legend>¿Qué esperas para ser parte de la comunidad ALL OUT? A continuación completa con los datos requeridos.
-
+  <legend>
+    ¿Qué esperas para ser parte de la comunidad ALL OUT? A continuación completa con los datos requeridos.
   </legend>
 
   <form class="registro">
@@ -74,50 +74,53 @@
         <label for="Nombre" class="form-label"> Nombre</label>
         <input type="text" name="Nombre" class="form-control input" id="Nombre">
       </div>
-      <div class="col-sm-4"> <label for="Apellido"> Apellido </label>
+      <div class="col-sm-4">
+        <label for="Apellido"> Apellido </label>
         <input type="text" name="Apellido" class="form-control input" id="Apellido">
       </div>
-      <div class="col-sm-4"> <label for="Edad">Edad </label>
+      <div class="col-sm-4">
+        <label for="Edad">Edad </label>
         <input type="number" name="Edad" class="form-control input">
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-4"> <label for="email" name="email" id="email">E-Mail</label>
+      <div class="col-sm-4">
+        <label for="email" name="email" id="email">E-Mail</label>
         <input type="email" name="email" class="form-control input">
       </div>
-      <div class="col-sm-4"> <label for="usuario">*Usuario</label>
+      <div class="col-sm-4">
+        <label for="usuario">*Usuario</label>
         <input type="text" name="*Usuario" class="form-control input" id="*Usuario">
       </div>
-      <div class="col-sm-4"><label for="password">*contraseña</label>
+      <div class="col-sm-4">
+        <label for="password">*contraseña</label>
         <input type="password" name="contraseña" class="form-control input">
       </div>
     </div>
     <div id="emailHelp" class="form-text"> No compartiremos tus datos con nadie.</div>
-    <div class="col-sm-4">
-      <label for="Planificacion"> Planificación</label>
-      <select name="Planificacion" id="Planificacion">
-        <option>Selecciona una Planificación</option>
-        <option>Scaled</option>
-        <option>Intermediate</option>
-        <option>Elite</option>
-      </select>
-    </div>
-    <div class="col-sm-4"> <label for="Metodo de Pago"> Metodo de Pago</label>
-      <select name="Metodo de Pago" id="Metodo de pago">
-        <option value="Blank"></option>
-        <option value="Efectivo/Transferencia">Efectivo/Transferencia</option>
-        <option value="Debito">Debito</option>
-        <option value="Credito">Crédito</option>
-      </select>
-    </div>
-    <div class="row">
-
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="../Pages/Login.html" type="Registrarme" class="btn btn-primary azul">Registrarme</button></a>
-        </div>
+    <div class="col-sm-4" >
+    <label for="Planificacion"> Planificación</label>
+      <div class= "botones">
+      <button type= "button" class="btn btn-primary">Scaled</button>
+      <button type="button" class="btn btn-primary">intermedio</button>
+      <button type="button" class="btn btn-primary">Elite</button>
       </div>
+    </div>
+    <div class="col-sm-4"> 
+      <label for="Metodo de Pago"> Metodo de Pago</label>
+      <div class= "botones">
+      <button type="button" class="btn btn-primary">Efectivo</button>
+      <button type="button" class="btn btn-primary">Debito</button>
+      <button type="button" class="btn btn-primary">Credito</button>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="../Pages/Login.html" type="Registrarme" class="btn btn-primary azul">Registrarme</button></a>
+      </div>
+    </div>
     </div>
   </form>
   </div>
