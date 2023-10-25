@@ -7,7 +7,7 @@ console.log("pagina de registro de Atletas")
 
 
 
-const miFormulario = document.getElementById("registroAtleta");
+const miFormulario = document.getElementById("miFormularioDeRegistro");
 miFormulario.addEventListener("submit", (e) => {
   e.preventDefault();
   // 1er paso es solicitar los datos al usuario (operador) - los recuperamos de los inputs del formulario
