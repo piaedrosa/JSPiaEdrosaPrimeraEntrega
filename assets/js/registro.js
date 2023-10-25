@@ -1,4 +1,4 @@
-console.log("pagina de registro de Atletas")
+//console.log("pagina de registro de Atletas")//
 
 
 

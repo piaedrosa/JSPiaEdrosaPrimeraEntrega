@@ -15,7 +15,7 @@ const recuperarListaEnStorage = () => {
 }
 
 let atletas = recuperarListaEnStorage();
-console.table(atletas);
+//console.table(atletas);//
 
 const isExisteAtleta = (atletas = [], identificador = "") => {
     return atletas.some(
