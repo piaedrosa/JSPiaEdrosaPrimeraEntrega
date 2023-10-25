@@ -5,7 +5,7 @@ let atletasMock = [
         edad: "22",
         email: "delfinacohen@gmail.com",
         usuario: "delfico",
-        contrasenia: "delfi1992",
+        contrasena: "delfi1992",
 
     },
     {
@@ -15,7 +15,7 @@ let atletasMock = [
         edad: "29",
         email: "crisceballos@gmail.com",
         usuario: "crisceba",
-        contrasenia: "ElremomiPasion23",
+        contrasena: "ElremomiPasion23",
 
     },
     {
@@ -25,7 +25,7 @@ let atletasMock = [
         edad: "27",
         email: "majitobusta@gmail.com",
         usuario: "Majobu",
-        contrasenia: "Majo1996",
+        contrasena: "Majo1996",
 
     },
     {
@@ -35,7 +35,7 @@ let atletasMock = [
         edad: "26",
         email: "diebenitez@gmail.com",
         usuario: "Ben10",
-        contrasenia: "diebeniteZ",
+        contrasena: "diebeniteZ",
 
     },
     {
@@ -45,7 +45,7 @@ let atletasMock = [
         edad: "19",
         email: "danirios@gmail.com",
         usuario: "DanielSan",
-        contrasenia: "Pateandotachos",
+        contrasena: "Pateandotachos",
 
     },
     {
@@ -55,7 +55,7 @@ let atletasMock = [
         edad: "42",
         email: "piaedrosa@gmail.com",
         usuario: "piaedrosa",
-        contrasenia: "Planta23",
+        contrasena: "Planta23",
 
     },
     {
@@ -65,7 +65,7 @@ let atletasMock = [
         edad: "30",
         email: "arimilla@gmail.com",
         usuario: "arimilla",
-        contrasenia: "arimilla32",
+        contrasena: "arimilla32",
 
     },
     {
@@ -75,7 +75,7 @@ let atletasMock = [
         edad: "32",
         email: "ismapina@gmail.com",
         usuario: "photopic",
-        contrasenia: "sacofotoslindas",
+        contrasena: "sacofotoslindas",
 
     },
     {
@@ -85,7 +85,7 @@ let atletasMock = [
         edad: "24",
         email: "Bautifarias@gmail.com",
         usuario: "Bautitute",
-        contrasenia: "Bautifa1998",
+        contrasena: "Bautifa1998",
 
     },
     {
@@ -95,7 +95,7 @@ let atletasMock = [
         edad: "16",
         email: "sofisivori20@gmail.com",
         usuario: "sofisivori20",
-        contrasenia: "lunayflash",
+        contrasena: "lunayflash",
 
     },
 

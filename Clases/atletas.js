@@ -5,7 +5,7 @@ class Atleta {
     edad,
     email,
     usuario,
-    contrasenia,
+    contrasena,
     )
 {
     this.nombre = nombre;
@@ -13,7 +13,7 @@ class Atleta {
     this.edad=edad;
     this.email= email
     this.usuario = usuario
-    this.contrasenia=contrasenia
+    this.contrasena=contrasena
 }
 
 toString =()=>{

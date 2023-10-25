@@ -5,7 +5,7 @@ let atletas = atletasMock.map((a) => {
         a.edad,
         a.email,
         a.usuario,
-        a.constrasenia,
+        a.constrasena,
     );
 });
 
@@ -15,7 +15,7 @@ const validarFormulario = (
     edad = "",
     email = "",
     usuario = "",
-    contrasenia = ""
+    contrasena = ""
 ) => {
     let mensajes = [];
     if (nombre.length == 0) {
@@ -41,7 +41,7 @@ const validarFormulario = (
         mensajes.push("Complete el campo usuario para continuar");
     }
 
-    if (contrasenia.length == 0) {
+    if (contrasena.length == 0) {
         mensajes.push("Complete el campo contraseña para continuar");
 
     }
@@ -58,7 +58,7 @@ const registrarAtleta = (
     edad,
     email,
     usuario,
-    contrasenia
+    contrasena
 ) => {
     const errores = validarFormulario(
         nombre,
@@ -66,7 +66,7 @@ const registrarAtleta = (
         edad,
         email,
         usuario,
-        contrasenia);
+        contrasena);
 
     if (errores.length !== 0) {
         console.table(erores);
@@ -83,7 +83,7 @@ const registrarAtleta = (
         edad,
         email,
         usuario,
-        contrasenia
+        contrasena
 
     );
     atletasMock.push(unAtleta);
@@ -97,7 +97,7 @@ while (respuesta.trim().toUpperCase() === "SI") {
     let edad = prompt("Ingrese edad");
     let email = prompt("Ingrese email");
     let usuario = prompt("Ingrese usuario");
-    let contrasenia = prompt("Ingrese contrasenia");
+    let contrasena = prompt("Ingrese contraseña");
 
     if (registrarAtleta(
         nombre,
@@ -105,7 +105,7 @@ while (respuesta.trim().toUpperCase() === "SI") {
         edad,
         email,
         usuario,
-        contrasenia)) {
+        contrasena)) {
         console.table(atletas)
     }
     else {

@@ -16,147 +16,153 @@
   <link rel="shortcut icon" href="../assets/img/LOGOS/Imagotipo full color redondo con filete.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
   <link rel="stylesheet" href="../assets/SCSS/Styles.css">
 </head>
-<!--Empieza el Header-->
-<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html"><img
-          src="../assets/img/LOGOS/Imagotipo full color redondo con filete.png" alt="Logo AllOut"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/quien-soy.html">Quien Soy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link activo" href="../Pages/atletas.html"> Atletas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/Recursos.html">Recursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
-          </li>
+
+<body>
+  <!--Empieza el Header-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img
+            src="../assets/img/LOGOS/Imagotipo full color redondo con filete.png" alt="Logo AllOut"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/quien-soy.html">Quien Soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="../Pages/atletas.html"> Atletas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/Recursos.html">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <a href="../Pages/Login.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+
+          <a href="../Pages/Registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
+          <button id="color-mode" class="btn btn-primary">Modo Oscuro</button>
+
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Termina el Header-->
+
+  <!--Empieza el Main-->
+  <Main class="registro">
+    <h1>Registro</h1>
+    <legend>
+      ¿Qué esperas para ser parte de la comunidad ALL OUT? A continuación completa con los datos requeridos.
+    </legend>
+
+    <form class="registro" id="miFormularioDeRegistro">
+      <div class="row">
+        <div class="col-sm-4">
+          <label id="labelNombre" for="nombre" class="form-label"> Ingrese su Nombre</label>
+          <input type="text" class="form-control input" id="nombre" placeholder="Nombre" />
+
+        </div>
+        <div class="col-sm-4">
+          <label id="labelApellido" for="Apellido" class="col-sm-4"> Ingrese su Apellido </label>
+          <input type="text" class="form-control input" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="col-sm-4">
+          <label id="labelApellido" for="Edad" class="col-sm-4"> Ingrese su Edad </label>
+          <input type="number" class="form-control input" id="edad" placeholder="Edad">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <label id="labelEmail" for="email" class="col-sm-4"> E-Mail</label>
+          <input type="email" class="form-control input" id="email" placeholder="Ingrese su E-mail">
+        </div>
+        <div class="col-sm-4">
+          <label id="labelUsuario" for="usuario" class="col-sm-4">*Usuario</label>
+          <input type="text" class="form-control input" id="usuario" placeholder="Ingrese su Usuario">
+        </div>
+        <div class="col-sm-4">
+          <label id="labelContrasena" for="password" class="col-sm-4">*contraseña</label>
+          <input type="password" class="form-control input" id="contrasena" placeholder="Ingrese su Contraseña">
+        </div>
+
+      </div>
+      <div class="form-text" id="emailHelp"> No compartiremos tus datos con nadie.</div>
+      <div class="col-sm-4">
+        <label for="Planificacion"> Planificación</label>
+        <div class="botones-Planificacion">
+          <button type="button" class="btn btn-primary" id="scaled">Scaled</button>
+          <button type="button" class="btn btn-primary" id="Intermedio">Intermedio</button>
+          <button type="button" class="btn btn-primary" id="Elite">Elite</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <label for="Metodo de Pago"> Metodo de Pago</label>
+        <div class="botones-MetodoDePago">
+          <button type="button" class="btn btn-primary" id="Efectivo">Efectivo</button>
+          <button type="button" class="btn btn-primary" id="Debito">Debito</button>
+          <button type="button" class="btn btn-primary" id="Credito">Credito</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-success" id="btnRegistrar">
+            Registrar
+          </button>
+        </div>
+      </div>
+      </div>
+    </form>
+    </div>
+  </Main>
+  <!--Termina el main-->
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <h6>2023 © AllOut.com - Todos los derechos reservados.</h6>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <ul>
+          <li><a href="https://www.instagram.com/allout.programming/"><img class="instagram"
+                src="../assets/icons/Instagram.png" alt=" instagram logo"> </a></li>
+          <li><a href="https://www.youtube.com/@m.suareztraining/featured"><img class="youtube"
+                src="../assets/icons/Youtube.png" alt="youtube logo"> </a></li>
+          <li><a href="https://open.spotify.com/user/elmatute84?si=f824782e140e4f5b"><img class="spotify"
+                src="../assets/icons/Spotify.png" alt="spotify logo"> </a></li>
         </ul>
-
-        <a href="../Pages/Login.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
-        <a href="../Pages/Registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
-        <button id="color-mode" class="btn btn-primary">Modo Oscuro</button>
-
-
-
       </div>
-    </div>
-  </nav>
-</header>
-
-<!--Termina el Header-->
-
-<!--Empieza el Main-->
-<Main class="registro">
-  <h1>Registro</h1>
-  <legend>
-    ¿Qué esperas para ser parte de la comunidad ALL OUT? A continuación completa con los datos requeridos.
-  </legend>
-
-  <form class="registro">
-    <div class="row">
-      <div class="col-sm-4">
-        <label for="Nombre" class="form-label"> Nombre</label>
-        <input type="text" name="Nombre" class="form-control input" id="Nombre">
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <ul>
+          <li> <a href="https://tr.ee/nSe3uk7MG2"><img class="whatsapp" src="../assets/icons/Whatsapp.png"
+                alt="whatsapp logo"> </a></li>
+        </ul>
       </div>
-      <div class="col-sm-4">
-        <label for="Apellido"> Apellido </label>
-        <input type="text" name="Apellido" class="form-control input" id="Apellido">
-      </div>
-      <div class="col-sm-4">
-        <label for="Edad">Edad </label>
-        <input type="number" name="Edad" class="form-control input">
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <label for="email" name="email" id="email">E-Mail</label>
-        <input type="email" name="email" class="form-control input">
-      </div>
-      <div class="col-sm-4">
-        <label for="usuario">*Usuario</label>
-        <input type="text" name="*Usuario" class="form-control input" id="*Usuario">
-      </div>
-      <div class="col-sm-4">
-        <label for="password">*contraseña</label>
-        <input type="password" name="contraseña" class="form-control input">
-      </div>
-    </div>
-    <div id="emailHelp" class="form-text"> No compartiremos tus datos con nadie.</div>
-    <div class="col-sm-4" >
-    <label for="Planificacion"> Planificación</label>
-      <div class= "botones">
-      <button type= "button" class="btn btn-primary">Scaled</button>
-      <button type="button" class="btn btn-primary">intermedio</button>
-      <button type="button" class="btn btn-primary">Elite</button>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <label for="Metodo de Pago"> Metodo de Pago</label>
-      <div class= "botones">
-      <button type="button" class="btn btn-primary">Efectivo</button>
-      <button type="button" class="btn btn-primary">Debito</button>
-      <button type="button" class="btn btn-primary">Credito</button>
-    </div>
-    </div>
+  </footer>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <a href="../Pages/Login.html" type="Registrarme" class="btn btn-primary azul">Registrarme</button></a>
-      </div>
-    </div>
-    </div>
-  </form>
-  </div>
-</Main>
-<!--Termina el main-->
-<!-- footer -->
-<footer class="container-fluid">
-  <div class="row footer">
-    <div class="col-md-4 col-lg-4 col-xs-12">
-      <h6>2023 © AllOut.com - Todos los derechos reservados.</h6>
-    </div>
-    <div class="col-md-4 col-lg-4 col-xs-12">
-      <ul>
-        <li><a href="https://www.instagram.com/allout.programming/"><img class="instagram"
-              src="../assets/icons/Instagram.png" alt=" instagram logo"> </a></li>
-        <li><a href="https://www.youtube.com/@m.suareztraining/featured"><img class="youtube"
-              src="../assets/icons/Youtube.png" alt="youtube logo"> </a></li>
-        <li><a href="https://open.spotify.com/user/elmatute84?si=f824782e140e4f5b"><img class="spotify"
-              src="../assets/icons/Spotify.png" alt="spotify logo"> </a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-lg-4 col-xs-12">
-      <ul>
-        <li> <a href="https://tr.ee/nSe3uk7MG2"><img class="whatsapp" src="../assets/icons/Whatsapp.png"
-              alt="whatsapp logo"> </a></li>
-      </ul>
-    </div>
-
-</footer>
+  <script src="../Clases/registroAtleta.js"> </script>
+  <script src="../assets/js/constantes.js"></script>
+  <script src="../assets/js/registro.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
 
-<script src="../Mocks/atletas.js"> </script>
-<script src="../Clases/atletas.js"> </script>
 
-<script src="../assets/js/main.js"></script>
-
-</body>
-
-</html>

@@ -1,105 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <meta name="description"content="All out, Programaciones de crossfit a tu medida">
-    <meta name="keywords" content="Crossfit, Entrenamiento, Programacion, AllOut">
-    <link rel="shortcut icon" href="../assets/img/LOGOS/Imagotipo full color redondo con filete.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-      <link rel="stylesheet" href="../assets/SCSS/Styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <meta name="description" content="All out, Programaciones de crossfit a tu medida">
+  <meta name="keywords" content="Crossfit, Entrenamiento, Programacion, AllOut">
+  <link rel="shortcut icon" href="../assets/img/LOGOS/Imagotipo full color redondo con filete.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel="stylesheet" href="../assets/SCSS/Styles.css">
 </head>
-  
-  <body>
-      <!--Empieza el Header-->
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../assets/img/LOGOS/Imagotipo full color redondo con filete.png" alt="Logo AllOut"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="../Pages/quien-soy.html">Quien Soy</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link activo" href="../Pages/atletas.html"> Atletas</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="../Pages/Recursos.html">Recursos</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
-                      </li>
-                  </ul>
-                  
-                  <a href="../Pages/Login.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
-                  <a href="../Pages/Registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
-                  </form>
-              </div>
-          </div>
-      </nav>
-    </header>
-    <!--Termina el Header-->
-    <!--Empieza el Main-->
-    <main>
-      <div class="container-fluid ">
+
+<body>
+  <!--Empieza el Header-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img
+            src="../assets/img/LOGOS/Imagotipo full color redondo con filete.png" alt="Logo AllOut"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/quien-soy.html">Quien Soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="../Pages/atletas.html"> Atletas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/Recursos.html">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <a href="../Pages/Login.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+          <a href="../Pages/Registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Termina el Header-->
+  <!--Empieza el Main-->
+  <main>
+    <div class="container-fluid ">
       <h1>Accedé a tu Planificación</h1>
       <p> Logueate con tu usuario y contraseña y empezá a entrenar!</p>
-        
-      
+
+
       <form>
-        <div class="mb-3 login">
-          <label for="Usuario" class="form-label ">Usuario</label>
-          <input type="Usuario" class="form-control input" id="usuario" aria-describedby="emailHelp">
-          
+        <div class="mb-3 login" id="formularioLogin">
+          <label for="usuario" class="form-label ">Usuario</label>
+          <input 
+          type="text" 
+          id="usuario"
+          class="form-control input" 
+          placeholder="Usuario"
+          autofocus="true">
+
         </div>
         <div class="mb-3 login">
-          <label for="Password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control input" id="Password">
+          <label for="password" class="form-label">Contraseña</label>
+          <input 
+          type="password" 
+          id="contrasena"
+          class="form-control input"
+          placeholder="Contraseña" >
         </div>
-        <button type="submit" class="btn btn-primary azul">Ingresar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Ingresar 
+        </button>
       </form>
-  
-  <div class="retrieve">
-   <p> ¿Olvidaste tu contraseña? Hace click aca </p> 
-   <div class="boton2">
-   <a href="../Pages/Recuperarcontrasenia.html"> <button type="Recuperar-Contrasenia" class="btn btn-primary azul">Recuperar contraseña</button></a>
-  </div>
-  <div class="ingresar">
-    <p>¿Todavía no sos miembro de la comunidad? </p>
+
+      <div class="retrieve">
+        <p> ¿Olvidaste tu contraseña? Hace click aca </p>
+        <div class="boton2">
+          <a href="../Pages/Recuperarcontrasenia.html"> <button type="Recuperar-Contrasenia"
+              class="btn btn-primary azul">Recuperar contraseña</button></a>
+        </div>
+        <div class="ingresar">
+          <p>¿Todavía no sos miembro de la comunidad? </p>
+        </div>
+        <div class="boton3">
+          <a href="../Pages/Registro.html"> <button type="Registrarme" class="btn btn-primary">Registrarme</button></a>
+        </div>
+        
+      </div>
     </div>
-    <div class="boton3">
-        <a href="../Pages/Registro.html"> <button type="Registrarme" class="btn btn-primary">Registrarme</button></a>
-    </div>
-   </div>
-  </div>
-    </main>
-<!--Termina el main-->
- <!-- footer -->
-<footer class="container-fluid">
-  <div class="row footer">
-   <div class="col-md-4 col-lg-4 col-xs-12">
-    <h6>2023 © AllOut.com - Todos los derechos reservados.</h6>
-  </div>
-  <div class="col-md-4 col-lg-4 col-xs-12">
-    <ul><li><a href="https://www.instagram.com/allout.programming/"><img class="instagram"  src="../assets/icons/Instagram.png" alt=" instagram logo"> </a></li>
-      <li><a href="https://www.youtube.com/@m.suareztraining/featured"><img class="youtube" src="../assets/icons/Youtube.png" alt="youtube logo"> </a></li>
-      <li><a href="https://open.spotify.com/user/elmatute84?si=f824782e140e4f5b"><img class="spotify"  src="../assets/icons/Spotify.png" alt="spotify logo"> </a></li>
-    </ul>
-  </div>
-  <div class="col-md-4 col-lg-4 col-xs-12">
-    <ul><li> <a href="https://tr.ee/nSe3uk7MG2"><img class="whatsapp"src="../assets/icons/Whatsapp.png" alt="whatsapp logo"> </a></li></ul>
-  </div>
-  
-</footer>
+  </main>
+  <!--Termina el main-->
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="row footer">
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <h6>2023 © AllOut.com - Todos los derechos reservados.</h6>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <ul>
+          <li><a href="https://www.instagram.com/allout.programming/"><img class="instagram"
+                src="../assets/icons/Instagram.png" alt=" instagram logo"> </a></li>
+          <li><a href="https://www.youtube.com/@m.suareztraining/featured"><img class="youtube"
+                src="../assets/icons/Youtube.png" alt="youtube logo"> </a></li>
+          <li><a href="https://open.spotify.com/user/elmatute84?si=f824782e140e4f5b"><img class="spotify"
+                src="../assets/icons/Spotify.png" alt="spotify logo"> </a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xs-12">
+        <ul>
+          <li> <a href="https://tr.ee/nSe3uk7MG2"><img class="whatsapp" src="../assets/icons/Whatsapp.png"
+                alt="whatsapp logo"> </a></li>
+        </ul>
+      </div>
+
+  </footer>
 
 
-<script src="./assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../Clases/registroAtleta.js"></script>
+  <script src="../assets/js/constantes.js"></script>
+  <script src="../assets/js/login.js"></script>
+  <script src="../assets/js/registro.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
 </body>
-</html>
+
+</html> 
