@@ -4,8 +4,8 @@ console.log("estas en la pagina del login");
 
 
 
-const formularioRegistro = document.getElementById("formularioLogin");
-formularioRegistro.addEventListener("submit", (e)=>{
+const miFormulario = document.getElementById("formularioLogin");
+miFormulario.addEventListener("submit", (e)=>{
     e.preventDefault();
 
 
