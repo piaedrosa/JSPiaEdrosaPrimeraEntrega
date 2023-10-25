@@ -7,7 +7,7 @@ console.log("pagina de registro de Atletas")
 
 
 
-const miFormulario = document.getElementById("miFormularioDeRegistro");
+const miFormulario = document.getElementById("registroAtleta");
 miFormulario.addEventListener("submit", (e) => {
   e.preventDefault();
   // 1er paso es solicitar los datos al usuario (operador) - los recuperamos de los inputs del formulario
@@ -23,11 +23,7 @@ miFormulario.addEventListener("submit", (e) => {
   // 2do paso crear o registrar al atleta dentro del sistema
  
  
- 
- 
- 
- 
- if (
+  if (
     registrarAtleta(nombre,apellido,edad,email,usuario,contrasena)) {
     miFormulario.reset();
     alert("Atleta Registrado con éxito")
