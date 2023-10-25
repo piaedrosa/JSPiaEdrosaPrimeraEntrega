@@ -1,3 +1,12 @@
+console.log("pagina de registro de Atletas")
+
+
+
+
+
+
+
+
 const miFormulario = document.getElementById("miFormularioDeRegistro");
 miFormulario.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -17,7 +26,8 @@ miFormulario.addEventListener("submit", (e) => {
  
  
  
-     if (
+ 
+ if (
     registrarAtleta(nombre,apellido,edad,email,usuario,contrasena)) {
     miFormulario.reset();
     alert("Atleta Registrado con éxito")
@@ -49,10 +59,12 @@ const validarFormulario = (
     alert("No tienes edad suficiente para registrarte sin permiso de tus padres. Ponte en contacto con nosotros a través de nuestro formulario de contacto");
     return false;
   }
+
   if (email.length == 0) {
     alert("El Correo electrónico es requerido");
     return false;
   }
+ 
   if (usuario == 0) {
     alert("El nombre de usuario es requerido");
     return false;
@@ -61,6 +73,7 @@ const validarFormulario = (
     alert("El nombre de usuario debe contener por los menos " + usuarioMinChar + " caracteres");
     return false;
   }
+
   if (contrasena.length == 0) {
     alert("La contraseña es requerida");
     return false;
@@ -70,28 +83,10 @@ const validarFormulario = (
     return false;
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return true;
 };
+
+
 
 const registrarAtleta = (
   nombre,

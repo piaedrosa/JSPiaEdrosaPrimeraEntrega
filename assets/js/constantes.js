@@ -1,4 +1,4 @@
-const LOCAL_STORAGE_NOMBRE = "Atletas";
+const LOCAL_STORAGE_NOMBRE = "atletas";
 
 const actualizarListaEnStorage = (list = []) => {
     localStorage.setItem(LOCAL_STORAGE_NOMBRE, JSON.stringify(list));
@@ -29,7 +29,7 @@ const getAtleta = (atletas = [], identificador = "") => {
     );
 };
 
-const ATLETA_LOGGEADO_LLAVE = "AtletaLogueado";
+const ATLETA_LOGGEADO_LLAVE = "Atleta Logueado";
 const registrarInicio = (unAlteta) => {
     sessionStorage.setItem(ATLETA_LOGGEADO_LLAVE, JSON.stringify(unAlteta));
 };

@@ -4,13 +4,14 @@ console.log("estas en la pagina del login");
 
 
 
-const formularioLogin = document.getElementById("formularioLogin");
-formularioLogin.addEventListener("submit", (e)=>{
+const miFormulario = document.getElementById("formularioLogin");
+miFormulario.addEventListener("submit", (e)=>{
     e.preventDefault();
 
 
     let usuario = document.getElementById("usuario").value;
     let contrasena =document.getElementById("contrasena").value;
+    
 
     if (!validarFormulario (usuario, contrasena)) {
         alert("Completar todos los campos");
@@ -37,19 +38,6 @@ formularioLogin.addEventListener("submit", (e)=>{
     window.location= "/index.html" 
 });
 
-const validarFormulario = (usuario, contrasena) => {
-    if (usuario == 0) {
-        alert("El nombre de usuario es requerido");
-        return false;
-      }
-     
-      if (contrasena.length == 0) {
-        alert("La contraseña es requerida");
-        return false;
-      }
 
-    return true;
-
-};
 
  
