@@ -1,6 +1,5 @@
-//carga de pacientes con prompt//
-
-
+//carga de pacientes con prompt
+/*
 let atletas = atletasMock.map((a) => {
   return new Atleta(
       a.nombre,
@@ -214,14 +213,13 @@ let darkMode = localStorage.getItem("dark-mode");
  } else {
     desactivarDarkMode();
   }
+  */
   
-  bottonColorMode.addEventListener("click", ()=> {
-    darkMode= localStorage.getItem("darkmode");
-    if (darkMode==="activado"){
-      desactivarDarkMode();
-    } else{activarDarkMode();
-
-    }
-  })
 
  
+  Swal.fire({
+    icon: 'warning',
+    title: 'Te falta iniciar sesion.',
+    text: 'No puedes acceder sin antes registrarte y ingresar tus credenciales',
+    footer: '<a href="./Pages/Login.html">anda al Login para continuar</a>'
+  })

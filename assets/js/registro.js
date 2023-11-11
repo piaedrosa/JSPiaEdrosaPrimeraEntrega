@@ -21,16 +21,24 @@ miFormulario.addEventListener("submit", (e) => {
 
   // hideMessages();
   // 2do paso crear o registrar al atleta dentro del sistema
- 
- 
+
+
   if (
-    registrarAtleta(nombre,apellido,edad,email,usuario,contrasena)) {
+    registrarAtleta(nombre, apellido, edad, email, usuario, contrasena)) {
     miFormulario.reset();
-    alert("Atleta Registrado con éxito")
-    window.location= "/Pages/Login.html";
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Atleta Registrado con éxito.',
+      text: 'Dirigete al Login para acceder a tu Planificación',
+      footer: '<a href="./pages/login">Login</a>',
+      timer: 5000,
+    });
+
   } else {
-    alert("Revisa los datos ingresados");
+    
   }
+  
 });
 const usuarioMinChar = 6;
 const passwordMInChar = 8;
@@ -44,41 +52,89 @@ const validarFormulario = (
   contrasena = "",
 ) => {
   if (nombre.length == 0) {
-    alert("Ingrese su nombre");
+      Swal.fire({
+      icon: 'warning',
+      title: 'Ingrese su nombre',
+      text: 'El campo Nombre no puede quedar vacío',
+      timer:4000
+
+    });
     return false;
   }
   if (apellido.length == 0) {
-    alert("Ingrese su apellido");
+    Swal.fire({
+      icon: 'warning',
+      title: 'Ingrese su Apellido',
+      text: 'El campo Apellido no puede quedar vacío',
+      timer:4000
+
+    });
     return false;
   }
   if (edad < 17) {
-    alert("No tienes edad suficiente para registrarte sin permiso de tus padres. Ponte en contacto con nosotros a través de nuestro formulario de contacto");
+    Swal.fire({
+      icon: 'error',
+      title: 'No tienes edad suficiente para registrarte sin permiso de tus padres.',
+      text: 'EPonte en contacto con nosotros a través de nuestro formulario de contacto',
+      timer:4000
+
+    });
+    
     return false;
   }
 
   if (email.length == 0) {
-    alert("El Correo electrónico es requerido");
+    Swal.fire({
+      icon: 'warning',
+      title: 'Ingrese su Email',
+      text: 'El campo Email no puede quedar vacío',
+      timer:4000
+
+    });
     return false;
   }
- 
+
   if (usuario == 0) {
-    alert("El nombre de usuario es requerido");
+    Swal.fire({
+      icon: 'warning',
+      title: 'Ingrese su Usuario',
+      text: 'El campo Usuario no puede quedar vacío',
+      timer:4000
+
+    });
     return false;
   }
   if (usuario.length < usuarioMinChar) {
-    alert("El nombre de usuario debe contener por los menos " + usuarioMinChar + " caracteres");
+    Swal.fire({
+      icon: 'warning',
+      title: 'El nombre de usuario debe contener por los menos ' + usuarioMinChar + ' caracteres',
+      timer:4000
+
+    });
+    
     return false;
   }
 
   if (contrasena.length == 0) {
-    alert("La contraseña es requerida");
+    Swal.fire({
+      icon: 'warning',
+      title: 'Ingrese su Contraseña',
+      text: 'El campo Contraseña no puede quedar vacío',
+      timer:4000
+
+    });
     return false;
   }
   if (contrasena.length < passwordMInChar) {
-    alert("La contraseña debe tener al menos " + passwordMInChar + " caracteres");
+    Swal.fire({
+      icon: 'warning',
+      title: 'La contraseña debe contener por los menos ' + passwordMInChar + ' caracteres',
+      timer:4000
+
+    });
     return false;
   }
-  
+
   return true;
 };
 
@@ -108,7 +164,13 @@ const registrarAtleta = (
   }
   // 2do Validar que el atleta no existe dentro del sistema
   if (isExisteAtleta(atletas, usuario)) {
-    alert("El Atleta ya existe en la base de datos con el usuario ingresado");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El Atleta ya existe en la base de datos con el usuario ingresado!',
+      timer: 8000,
+    });
+    
     return false;
   }
 
@@ -125,7 +187,12 @@ const registrarAtleta = (
   // 4to Añadimos al nuevo Atleta a nuestra base de atletas registrados
   atletas.push(unAtleta);
   actualizarListaEnStorage(atletas)
-  alert("usuario registrado con éxito");
+  Swal.fire({
+    icon: 'success',
+    title: 'Atleta registrado con éxito',
+    text: 'Dirigete al Login para acceder a tu Planificación',
+    timer:5000
+  });
   return true;
 };
 

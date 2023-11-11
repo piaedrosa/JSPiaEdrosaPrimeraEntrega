@@ -14,13 +14,25 @@ miFormularioLog.addEventListener("submit", (e)=>{
    
     //console.log("--> aleta recuperado", unAtleta);//
     if (!unAtleta) {
-        alert("el usuario ingresado no existe");
+        Swal.fire({
+            icon: 'error',
+            title: 'El usuario ingresado no existe',
+            text: 'verifica los datos ingresados',
+            timer:4000
+      
+          });
+       
         return false;
         
     }
 
     if (!unAtleta.isPassword(contrasena)) {
-        alert("Contraseña incorrecta");
+        Swal.fire({
+            icon: 'error',
+            text: 'Contraseña incorrecta',
+            timer:4000
+      
+          });;
         return false;
     }
 
