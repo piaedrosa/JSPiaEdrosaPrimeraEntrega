@@ -1,4 +1,4 @@
-//carga de pacientes con prompt
+//carga de atletas con prompt
 /*
 let atletas = atletasMock.map((a) => {
   return new Atleta(
@@ -216,10 +216,10 @@ let darkMode = localStorage.getItem("dark-mode");
   */
   
 
- 
+ setTimeout( ()=>{
   Swal.fire({
     icon: 'warning',
-    title: 'Te falta iniciar sesion.',
+    title: 'Bienvenido! Te falta iniciar sesion.',
     text: 'No puedes acceder sin antes registrarte y ingresar tus credenciales',
-    footer: '<a href="./Pages/Login.html">anda al Login para continuar</a>'
-  })
+    footer: '<a href="./Pages/Login.html"> Haz click aqui para ir al Login </a>'
+  })}, 5000)
